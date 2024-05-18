@@ -1,0 +1,49 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/default.cmake`
+  `-DCMAKE_INSTALL_PREFIX=/home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "-H." "-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/default.cmake" "-DCMAKE_INSTALL_PREFIX=/home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default"
+-- [polly] Used toolchain: Default
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/arina/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 347e47c | Config-ID: a5ff4fc ]
+-- [hunter] GTEST_ROOT: /home/arina/projects/hunter/_Base/xxxxxxx/347e47c/a5ff4fc/Install (ver.: 1.14.0)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default`
+  `--target`
+  `install`
+  `--`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--build" "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default" "--target" "install" "--"
+Consolidate compiler generated dependencies of target print
+[100%] Built target print
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/lib/libprint.a
+-- Installing: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/include
+-- Installing: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/include/print.hpp
+-- Installing: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/cmake/print-config.cmake
+-- Installing: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/cmake/print-config-noconfig.cmake

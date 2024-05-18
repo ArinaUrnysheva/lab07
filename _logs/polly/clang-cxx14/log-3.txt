@@ -1,0 +1,70 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "-H." "-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is Clang 14.0.0
+-- The CXX compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - broken
+-- Configuring incomplete, errors occurred!
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake:62 (message):
+  The C++ compiler
+
+    "/usr/bin/clang++"
+
+  is not able to compile a simple test program.
+
+See also "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeOutput.log".
+  It fails with the following output:
+
+    Change Dir: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeTmp
+
+See also "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeError.log".
+    Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d90ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d90ac.dir/build.make CMakeFiles/cmTC_d90ac.dir/build
+    gmake[1]: вход в каталог «/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeTmp»
+    Building CXX object CMakeFiles/cmTC_d90ac.dir/testCXXCompiler.cxx.o
+    /usr/bin/clang++   -stdlib=libc++  -std=c++14 -MD -MT CMakeFiles/cmTC_d90ac.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_d90ac.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_d90ac.dir/testCXXCompiler.cxx.o -c /home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+    Linking CXX executable cmTC_d90ac
+    /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d90ac.dir/link.txt --verbose=1
+    /usr/bin/clang++  -stdlib=libc++  CMakeFiles/cmTC_d90ac.dir/testCXXCompiler.cxx.o -o cmTC_d90ac
+    /usr/bin/ld: невозможно найти -lc++: Нет такого файла или каталога
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    gmake[1]: *** [CMakeFiles/cmTC_d90ac.dir/build.make:100: cmTC_d90ac] Ошибка 1
+    gmake[1]: выход из каталога «/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeTmp»
+    gmake: *** [Makefile:127: cmTC_d90ac/fast] Ошибка 2
+
+
+
+
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:15 (project)
+
+

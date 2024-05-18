@@ -1,0 +1,30 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "-H." "-B/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/home/arina/ArinaUrnysheva/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+CMake Error at CMakeLists.txt:24:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "...".
+-- Configuring incomplete, errors occurred!
+
+
+See also "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeOutput.log".
+See also "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/clang-cxx14/CMakeFiles/CMakeError.log".

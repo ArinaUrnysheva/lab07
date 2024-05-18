@@ -1,0 +1,31 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default`
+  `--target`
+  `install`
+  `--`
+]
+[/home/arina/ArinaUrnysheva/workspace/projects/lab07]> "cmake" "--build" "/home/arina/ArinaUrnysheva/workspace/projects/lab07/_builds/default" "--target" "install" "--"
+[100%] Built target print
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/lib/libprint.a
+-- Up-to-date: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/include
+-- Up-to-date: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/include/print.hpp
+-- Up-to-date: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/cmake/print-config.cmake
+-- Up-to-date: /home/arina/ArinaUrnysheva/workspace/projects/lab07/_install/default/cmake/print-config-noconfig.cmake
